@@ -1,0 +1,27 @@
+{
+  "name": "agarz",
+  "version": "0.0.1",
+  "description": "agrega funcionalidades para agarz.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richirm/agarz.git"
+  },
+  "keywords": [
+    "agarz"
+  ],
+  "author": "richirm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richirm/agarz/issues"
+  },
+  "homepage": "https://github.com/richirm/agarz#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.11.0",
+    "matchdep": "^1.0.0"
+  }
+}
