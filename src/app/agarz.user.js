@@ -33,13 +33,13 @@
 // @match           http://agarz.com/
 // @include         http://agarz.com/
 // @grant           none
-// @updateURL       https://yeppha.github.io/downloads/YouTubeCenter.meta.js
-// @downloadURL     https://yeppha.github.io/downloads/YouTubeCenter.user.js
+// @updateURL       https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.meta.js
+// @downloadURL     https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.user.js
 // @updateVersion   0.0.1
 // @run-at          document-start
 // @priority        9001
 // @contributionURL https://github.com/richirm/agarz/wiki/Donate
-// @require         https://raw.githubusercontent.com/richirm/agarz/master/src/app/us.agarz.js
+// @require         https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.user.js
 // ==/UserScript==
 
 // The source code of agarz can be found at https://github.com/richirm/agarz/
