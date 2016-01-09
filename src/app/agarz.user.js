@@ -25,7 +25,7 @@
 // @id              agarz
 // @name            agarz extras
 // @namespace       http://www.facebook.com/richirm
-// @version         0.0.6
+// @version         0.0.7
 // @author          richirm
 // @description     Agrega funcionalidades para agarz
 // @icon            https://raw.githubusercontent.com/richirm/agarz/master/src/assets/img/t%26p.png
@@ -38,8 +38,23 @@
 // @run-at          document-end
 // @priority        9001
 // @contributionURL https://github.com/richirm/agarz/wiki/Donate
-// @require         https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.require.js
 // ==/UserScript==
 
 // The source code of agarz can be found at https://github.com/richirm/agarz/
 //
+
+(function () {
+	'use strict';
+	
+	console.log(111);
+	console.log(window.onkeydown);
+	var head = $('head').html().
+		replace('<script type="text/javascript" src="main17obf.js"></script>', '<script type="text/plain" src="https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.main.js"></script>'),
+		body = $('body').html();
+
+	$('head >, body >').remove();
+
+	$('body').append(body);
+	$('head').append(head);
+
+}());
