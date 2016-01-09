@@ -25,7 +25,7 @@
 // @id              agarz
 // @name            agarz extras
 // @namespace       http://www.facebook.com/richirm
-// @version         0.0.7
+// @version         0.0.8
 // @author          richirm
 // @description     Agrega funcionalidades para agarz
 // @icon            https://raw.githubusercontent.com/richirm/agarz/master/src/assets/img/t%26p.png
@@ -43,24 +43,26 @@
 // The source code of agarz can be found at https://github.com/richirm/agarz/
 //
 
+/*global window */
+
 (function () {
 	'use strict';
-	
-	console.log('agarz');
-	
-	var intervalMain = setInterval(function() {
-		if(!!window.onkeydown) {
-			setTimeout(function() {
-				var head = $('head').html().
+
+	window.console.log('agarz');
+
+	var intervalMain = window.setInterval(function () {
+		if (!!window.onkeydown) {
+			window.setTimeout(function () {
+				var head = window.$('head').html().
 					replace('<script type="text/javascript" src="main17obf.js"></script>', '<script type="text/plain" src="https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.main.js"></script>'),
-					body = $('body').html();
+					body = window.$('body').html();
 
-				$('head >, body >').remove();
+				window.$('head >, body >').remove();
 
-				$('body').append(body);
-				$('head').append(head);
+				window.$('body').append(body);
+				window.$('head').append(head);
 			}, 500);
-			clearInterval(intervalMain);
+			window.clearInterval(intervalMain);
 		}
 	}, 200);
 
