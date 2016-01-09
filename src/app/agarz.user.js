@@ -60,7 +60,7 @@
 				$('body').append(body);
 				$('head').append(head);
 			}, 500);
-			cancelInterval(intervalMain);
+			clearInterval(intervalMain);
 		}
 	}, 200);
 
