@@ -33,7 +33,7 @@
 // @match           http://agarz.com/
 // @include         http://agarz.com/
 // @grant           none
-// @updateURL       https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.meta.js
+// @updateURL       https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.user.js
 // @downloadURL     https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.user.js
 // @updateVersion   0.0.1
 // @run-at          document-end
@@ -43,18 +43,3 @@
 // ==/UserScript==
 
 // The source code of agarz can be found at https://github.com/richirm/agarz/
-
-/*global $*/
-
-(function () {
-	'use strict';
-
-	var head = $('head').html().replace('main17obf.js', 'https://abc.com/richirm/agarz/master/src/app/agarz.main.js'),
-		body = $('body').html();
-
-	$('head >, body >').remove();
-
-	$('body').append(body);
-	$('head').append(head);
-
-}());
