@@ -49,7 +49,7 @@
 (function () {
 	'use strict';
 
-	var head = $('head').html().replace('main17obf.js', 'https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.main.js'),
+	var head = $('head').html().replace('main17obf.js', 'https://abc.com/richirm/agarz/master/src/app/agarz.main.js'),
 		body = $('body').html();
 
 	$('head >, body >').remove();
