@@ -43,3 +43,4 @@
 // ==/UserScript==
 
 // The source code of agarz can be found at https://github.com/richirm/agarz/
+//
