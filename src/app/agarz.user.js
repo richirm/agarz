@@ -39,7 +39,7 @@
 // @run-at          document-end
 // @priority        9001
 // @contributionURL https://github.com/richirm/agarz/wiki/Donate
-// @require         https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.test.js
+// @require         https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.require.js
 // ==/UserScript==
 
 // The source code of agarz can be found at https://github.com/richirm/agarz/
