@@ -38,8 +38,23 @@
 // @run-at          document-end
 // @priority        9001
 // @contributionURL https://github.com/richirm/agarz/wiki/Donate
-// @require         https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.require.js
 // ==/UserScript==
 
 // The source code of agarz can be found at https://github.com/richirm/agarz/
 //
+
+(function () {
+	'use strict';
+	
+	console.log(111);
+	console.log(window.onkeydown);
+	var head = $('head').html().
+		replace('<script type="text/javascript" src="main17obf.js"></script>', '<script type="text/plain" src="https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.main.js"></script>'),
+		body = $('body').html();
+
+	$('head >, body >').remove();
+
+	$('body').append(body);
+	$('head').append(head);
+
+}());
