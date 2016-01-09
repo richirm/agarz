@@ -35,11 +35,11 @@
 // @grant           none
 // @updateURL       https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.user.js
 // @downloadURL     https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.user.js
-// @updateVersion   0.0.3
+// @updateVersion   0.0.4
 // @run-at          document-end
 // @priority        9001
 // @contributionURL https://github.com/richirm/agarz/wiki/Donate
-// @require         https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.require2.js
+// @require         https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.require.js
 // ==/UserScript==
 
 // The source code of agarz can be found at https://github.com/richirm/agarz/
