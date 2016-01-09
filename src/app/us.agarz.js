@@ -1,13 +1,10 @@
-// ==UserScript==
 // @name         agarz
+// @description  funcionalidades para agarz
 // @namespace    http://agarz.com/
 // @version      0.0.1
-// @description  funcionalidades para agarz
 // @author       richirm
 // @match        http://agarz.com
 
-// ==/UserScript==
-/*jshint -W097 */
 /*global $*/
 
 (function () {
