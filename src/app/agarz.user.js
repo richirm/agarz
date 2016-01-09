@@ -25,7 +25,7 @@
 // @id              agarz
 // @name            agarz extras
 // @namespace       http://www.facebook.com/richirm
-// @version         0.0.13
+// @version         0.0.14
 // @author          richirm
 // @description     Agrega funcionalidades para agarz
 // @icon            https://raw.githubusercontent.com/richirm/agarz/master/src/assets/img/t%26p.png
@@ -61,7 +61,7 @@
 
 				window.$('body').append(body);
 				window.$('head').append(head);
-			}, 2000);
+			}, 1000);
 			window.clearInterval(intervalMain);
 		}
 	}, 200);
