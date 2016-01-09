@@ -33,7 +33,7 @@
 // @match           http://agarz.com/
 // @include         http://agarz.com/
 // @grant           none
-// @updateURL       https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.meta.js
+// @updateURL       https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.user.js
 // @downloadURL     https://raw.githubusercontent.com/richirm/agarz/master/src/app/agarz.user.js
 // @updateVersion   0.0.1
 // @run-at          document-end
