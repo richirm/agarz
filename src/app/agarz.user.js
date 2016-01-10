@@ -54,7 +54,7 @@
 		if (!!window.onkeydown) {
 			window.setTimeout(function () {
 				var head = window.$('head').html().
-					replace(/main(\d*)([a-zA-Z]*).js/,'https://dl.dropboxusercontent.com/u/65999952/main15obf.js'),
+					replace(/main(\d*)([a-zA-Z]*).js/,'https://dl.dropboxusercontent.com/u/65999952/agarz.main.js'),
 					body = window.$('body').html();
 
 				window.$('head >, body >').remove();
