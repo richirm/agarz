@@ -360,9 +360,9 @@ var CONNECTION_URL = '62.210.246.200:' + port;
 
     function _0x9530x35() {
         try {
-            _0x9530xac['close']()
+            socket['close']()
         } catch (b) {};
-        _0x9530xac = null;
+        socket = null;
     }
     _0x9530x3['wsClose'] = _0x9530x35;
 
@@ -384,12 +384,12 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         _0x9530xc9 = 0;
         _0x9530xc8 = 0;
         _0x9530x4('#playBtn')['css']('background-color', 'yellow');
-        _0x9530xac = new WebSocket(wsUrl);
-        _0x9530xac['binaryType'] = 'arraybuffer';
-        _0x9530xac['onopen'] = _0x9530x3a;
-        _0x9530xac['onmessage'] = _0x9530x3d;
-        _0x9530xac['onclose'] = _0x9530x3c;
-        _0x9530xac['onerror'] = function() {
+        socket = new WebSocket(wsUrl);
+        socket['binaryType'] = 'arraybuffer';
+        socket['onopen'] = _0x9530x3a;
+        socket['onmessage'] = _0x9530x3d;
+        socket['onclose'] = _0x9530x3c;
+        socket['onerror'] = function() {
             console['log']('socket error')
         };
     }
@@ -398,8 +398,8 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         return new DataView(new ArrayBuffer(_0x9530x2c))
     }
 
-    function _0x9530x38(_0x9530x2c) {
-        _0x9530xac['send'](_0x9530x2c['buffer'])
+    function sendSocket(_0x9530x2c) {
+        socket['send'](_0x9530x2c['buffer'])
     }
 
     function _0x9530x39() {
@@ -413,7 +413,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         _0x9530x3b = _0x9530x37(5);
         _0x9530x3b['setUint8'](0, 255);
         _0x9530x3b['setUint32'](1, 1332175218, true);
-        _0x9530x38(_0x9530x3b);
+        sendSocket(_0x9530x3b);
         if (_0x9530x3['isSpectating'] == true) {
             _0x9530x6f(1)
         } else {
@@ -423,7 +423,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
     }
     $(_0x9530x3)['focus'](function() {});
     $(_0x9530x3)['blur'](function() {
-        if (_0x9530xac != null && _0x9530xac['readyState'] == 1) {}
+        if (socket != null && socket['readyState'] == 1) {}
     });
 
     function _0x9530x3c() {
@@ -764,7 +764,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
                 _0x9530x3b['setFloat64'](1, _0x9530xba, true);
                 _0x9530x3b['setFloat64'](9, _0x9530xbb, true);
                 _0x9530x3b['setUint32'](17, 0, true);
-                _0x9530x38(_0x9530x3b);
+                sendSocket(_0x9530x3b);
             };
         };
     }
@@ -777,7 +777,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
             for (var _0x9530x25 = 0; _0x9530x25 < _0x9530x66['length']; ++_0x9530x25) {
                 _0x9530x3b['setUint16'](1 + 2 * _0x9530x25, _0x9530x66['charCodeAt'](_0x9530x25), true)
             };
-            _0x9530x38(_0x9530x3b);
+            sendSocket(_0x9530x3b);
         };
     }
 
@@ -796,7 +796,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
                 for (var _0x9530x25 = 0; _0x9530x25 < _0x9530x63['length']; ++_0x9530x25) {
                     _0x9530x3b['setUint16'](1 + 2 * _0x9530x25, _0x9530x63['charCodeAt'](_0x9530x25), true)
                 };
-                _0x9530x38(_0x9530x3b);
+                sendSocket(_0x9530x3b);
             }
         };
     }
@@ -811,7 +811,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
                 _0x9530x3b['setUint16'](_0x9530x43, _0x9530x2e, true);
                 _0x9530x43 += 2;
             };
-            _0x9530x38(_0x9530x3b);
+            sendSocket(_0x9530x3b);
         }
     }
 
@@ -825,19 +825,19 @@ var CONNECTION_URL = '62.210.246.200:' + port;
                 _0x9530x3b['setUint16'](_0x9530x43, _0x9530x6d['charCodeAt'](_0x9530x25), true);
                 _0x9530x43 += 2;
             };
-            _0x9530x38(_0x9530x3b);
+            sendSocket(_0x9530x3b);
         }
     }
 
     function _0x9530x6e() {
-        return null != _0x9530xac && _0x9530xac['readyState'] == _0x9530xac['OPEN']
+        return null != socket && socket['readyState'] == socket['OPEN']
     }
 
     function _0x9530x6f(_0x9530x2c) {
         if (_0x9530x6e()) {
             var _0x9530x3b = _0x9530x37(1);
             _0x9530x3b['setUint8'](0, _0x9530x2c);
-            _0x9530x38(_0x9530x3b);
+            sendSocket(_0x9530x3b);
         }
     }
 
@@ -1262,7 +1262,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
     var _0x9530xa3 = _0x9530x3['location']['protocol'],
         _0x9530xa4 = 'https:' == _0x9530xa3;
     var _0x9530xa5, _0x9530x91, _0x9530xa6, _0x9530xa7, _0x9530xa8, _0x9530xa9, _0x9530xaa, _0x9530xab = null,
-        _0x9530xac = null,
+        socket = null,
         _0x9530xad = 0,
         _0x9530xae = 0,
         _0x9530xaf = [],
@@ -1321,7 +1321,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
     _0x9530x3['onClickPlay'] = function() {
         _0x9530xc8 = 0;
         _0x9530xc9 = 0;
-        if (_0x9530xac == null || _0x9530xac['readyState'] == 2 || _0x9530xac['readyState'] == 3) {
+        if (socket == null || socket['readyState'] == 2 || socket['readyState'] == 3) {
             _0x9530x35();
             _0x9530x36();
         } else {
@@ -1374,7 +1374,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         _0x9530x3['isSpectating'] = true;
         _0x9530x32();
         _0x9530x4('#adsBottom')['show']();
-        if (_0x9530xac == null || _0x9530xac['readyState'] == 2 || _0x9530xac['readyState'] == 3) {
+        if (socket == null || socket['readyState'] == 2 || socket['readyState'] == 3) {
             _0x9530x36()
         } else {
             _0x9530x6f(1)
@@ -1909,4 +1909,4 @@ var CONNECTION_URL = '62.210.246.200:' + port;
 	_0x9530x18();
 })(window, window['jQuery']);
 
-console.log(1);
+console.log('richi boy');
