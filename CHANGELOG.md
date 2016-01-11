@@ -6,6 +6,7 @@
 *	Muestra el skin
 *	_0x9530xac por socket
 *	_0x9530x38 por sendSocket 
+*   skin autocomplete on
 
 Initial changelog file, based on the angular CHANGELOG.md format
 

@@ -1910,3 +1910,5 @@ var CONNECTION_URL = '62.210.246.200:' + port;
 })(window, window['jQuery']);
 
 console.log('richi boy');
+
+$('#txtSkin').attr('autocomplete','on');
