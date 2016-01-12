@@ -4,8 +4,9 @@
 
 *	Masa rapido con W
 *	Muestra el skin
-*	_0x9530xac por socket
-*	_0x9530x38 por sendSocket 
+*	_0x901exae por socket
+*	_0x901ex3a por sendSocket 
+*	_0x901ex39 por crearDataView 
 *   skin autocomplete on
 
 Initial changelog file, based on the angular CHANGELOG.md format
