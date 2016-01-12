@@ -2,6 +2,7 @@
 
 ## Features
 
+*	ejecuta el onload al final
 *	Masa rapido con W
 *	Muestra el skin
 *	_0x901exae por socket
