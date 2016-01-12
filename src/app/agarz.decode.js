@@ -33,12 +33,12 @@ $.ajax({
 			if(v == '\n') {
 				aaa = aaa.replace(re, '\'enter\'');
 			} else {
-				aaa = aaa.replace(re, '\''+v+'\'');
+				aaa = aaa.replace(re, '\''+v.replace(/'/g,'_')+'\'');
 			}		
 		});
 		aaa = aaa.replace(/barra1/g, '[');
 		aaa = aaa.replace(/barra2/g, ']');
-		console.log(aaa);
+		console.log(aaa.toString());
 	}
 });
 

@@ -8,6 +8,7 @@
 *	_0x901ex3a por sendSocket 
 *	_0x901ex39 por crearDataView 
 *   skin autocomplete on
+*	cambia enter por \n
 
 Initial changelog file, based on the angular CHANGELOG.md format
 
