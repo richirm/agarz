@@ -1908,6 +1908,8 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         }
     };
     _0x901ex3['onload'] = _0x901ex18;
+	
+	_0x901ex18();
 })(window, window['jQuery']);
 
 console.log('richi boy');
