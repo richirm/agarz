@@ -15,21 +15,16 @@ $(document).keyup(function(e){
 		clearInterval(intervalW);intervalW=null;
 });
 
-
 var html = $.ajax({url:'http://agarz.com/', type: 'GET', success: function(resp) { html = resp}})
 
-
-
-var bbb = '_0x710e';
-
 $.ajax({
-	url: 'http://agarz.com/main18obf.js', 
+	url: 'http://agarz.com/main20obf.js', 
 	type: 'GET', 
 	success: function(resp){
 		var aaa = resp.replace(/\[/g, 'barra1');
 		aaa = aaa.replace(/\]/g, 'barra2');
-		$.each(_0x710e, function(k, v){
-			var re = new RegExp('_0x710ebarra1'+k+'barra2','g');
+		$.each(_0x7689, function(k, v){
+			var re = new RegExp('_0x7689barra1'+k+'barra2','g');
 			if(v == '\n') {
 				aaa = aaa.replace(re, '\'enter\'');
 			} else {
@@ -42,7 +37,6 @@ $.ajax({
 	}
 });
 
-
 var head = $('head').html().replace('main17obf.js','https://dl.dropboxusercontent.com/u/65999952/main15obf.js');
 var body = $('body').html();
 
@@ -50,5 +44,3 @@ $('head >, body >').remove();
 
 $('body').append(body);
 $('head').append(head);
-
-
