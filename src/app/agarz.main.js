@@ -868,13 +868,14 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         return _0x901ex77 * _0x901exde;
     }
 
-    function _0x901ex78() {
+    function obtenerZoom() {
         if (0 != _0x901exb2['length']) {
             for (var _0x901ex79 = 0, _0x901ex27 = 0; _0x901ex27 < _0x901exb2['length']; _0x901ex27++) {
                 _0x901ex79 += _0x901exb2[_0x901ex27]['size']
             };
             _0x901ex79 = Math['pow'](Math['min'](64 / _0x901ex79, 1), 0.4) * _0x901ex76();
             _0x901exc4 = (9 * _0x901exc4 + _0x901ex79) / 10;
+            _0x901exc4 = 0.15;
         }
     }
 
@@ -895,7 +896,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         ++_0x901exbe;
         _0x901exbf = _0x901ex80;
         if (0 < _0x901exb2['length']) {
-            _0x901ex78();
+            obtenerZoom();
             var _0x901ex30 = _0x901ex2e = 0;
             for (var _0x901ex31 = 0; _0x901ex31 < _0x901exb2['length']; _0x901ex31++) {
                 _0x901exb2[_0x901ex31]['updatePos']();
