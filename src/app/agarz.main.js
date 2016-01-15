@@ -138,17 +138,30 @@ var CONNECTION_URL = '62.210.246.200:' + port;
                     };
                     break;;
                 case 87:
-					_0x4786x20 = false;
-					_0x4786x19 = false;
-                    if ((!_0x4786x20) && (!_0x4786x19)) {
-                        _0x4786x66();
-						_0x4786x20 = false;
-						_0x4786x19 = false;
-                        _0x4786x71(21);
-                        _0x4786x20 = true;
+					// _0x4786x20 = false;
+					// _0x4786x19 = false;
+                    // if ((!_0x4786x20) && (!_0x4786x19)) {
+                        // _0x4786x66();
+						// _0x4786x20 = false;
+						// _0x4786x19 = false;
+                        // _0x4786x71(21);
+                        // _0x4786x20 = true;
+                    // };
+					// _0x4786x20 = false;
+					// _0x4786x19 = false;
+                    // break;;					
+                    if ((!_0x4786x21) && (!_0x4786x19)) {                        
+                        _0x4786x21 = true;
+                        _0x4786x71(22);
+                        _0x4786x21 = true;
+                        _0x4786x71(22);
+                        _0x4786x21 = true;
+                        _0x4786x71(22);
+                        _0x4786x21 = true;
+                        _0x4786x71(22);
+                        _0x4786x21 = true;
+                        _0x4786x71(22);
                     };
-					_0x4786x20 = false;
-					_0x4786x19 = false;
                     break;;
                 case 27:
                     _0x4786x35('fast');
@@ -197,7 +210,13 @@ var CONNECTION_URL = '62.210.246.200:' + port;
                     _0x4786x1f = false;
                     break;;
                 case 87:
-                    _0x4786x20 = false;
+                    // _0x4786x20 = false;
+                    // break;;
+					
+                    if (_0x4786x21) {
+                        _0x4786x21 = false;
+                        _0x4786x71(23);
+                    };
                     break;;
                 case 81:
                     if (_0x4786x17) {
@@ -865,7 +884,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
             };
             _0x4786x79 = Math['pow'](Math['min'](64 / _0x4786x79, 1), 0.4) * _0x4786x76();
             _0x4786xc4 = (9 * _0x4786xc4 + _0x4786x79) / 10;
-            _0x4786xc4 = 0.15;
+            //_0x4786xc4 = 0.15;
         }
     }
 
@@ -1329,6 +1348,8 @@ var CONNECTION_URL = '62.210.246.200:' + port;
             _0x4786x34();
             _0x4786x3b();
         };
+		
+		_0x4786x71(1);
     };
     _0x4786x3['setSkins'] = function(_0x4786x5) {
         _0x4786xc6 = _0x4786x5;
