@@ -1909,6 +1909,6 @@ var CONNECTION_URL = '62.210.246.200:' + port;
 
 window.zoomMin = 0.15;
 window.zoomSelec = false;
-console.log('main20obf');
+console.log('main22obf');
 console.log('richi boy');
 $('#txtSkin').attr('autocomplete','on');
