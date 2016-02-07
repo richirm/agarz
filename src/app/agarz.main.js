@@ -871,6 +871,12 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         _0x9711x77 = Math['max'](_0x9711xac / 1080, _0x9711xab / 1920);
         return _0x9711x77 * _0x9711xde
     }
+	
+	$(document).click(function(e){
+		if(e.which == 2) {
+			window.zoomSelec = !window.zoomSelec;
+		}
+	});
 
     function obtenerZoom() {
         if (0 != _0x9711xb2['length']) {
@@ -1909,6 +1915,6 @@ var CONNECTION_URL = '62.210.246.200:' + port;
 
 window.zoomMin = 0.15;
 window.zoomSelec = false;
-console.log('main22obf'); 
+console.log('main22obf');
 console.log('richi boy');
 $('#txtSkin').attr('autocomplete','on');
