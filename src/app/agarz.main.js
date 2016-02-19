@@ -209,17 +209,17 @@ var CONNECTION_URL = '62.210.246.200:' + port;
                     _0x21b4x1f = false;
                     break;
                 case 87:
-                    _0x21b4x20 = false;
-                    break;
-                case 81:
-                    // if (_0x21b4x17) {
-                        // _0x21b4x72(19);
-                        // _0x21b4x17 = false
-                    // };
+                    // _0x21b4x20 = false;
                     // break;
                     if (true || _0x21b4x21) {
                         _0x21b4x21 = false;
                         _0x21b4x72(23)
+                    };
+                    break;
+                case 81:
+                    if (_0x21b4x17) {
+                        _0x21b4x72(19);
+                        _0x21b4x17 = false
                     };
                     break;
                 case 69:
