@@ -997,7 +997,13 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         _0x5539x8c = Math['max'](_0x5539xbe / 1080, _0x5539xbd / 1920);
         return _0x5539x8c * _0x5539xf1
     }
-
+	
+	$(document).click(function(e){
+		if(e.which == 2) {
+			window.zoomSelec = !window.zoomSelec;
+		}
+	});
+	
     function obtenerZoom() {
         if (0 != _0x5539xc4['length']) {
             for (var _0x5539x8e = 0, _0x5539x2c = 0; _0x5539x2c < _0x5539xc4['length']; _0x5539x2c++) {
