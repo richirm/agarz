@@ -18,13 +18,13 @@ $(document).keyup(function(e){
 var html = $.ajax({url:'http://agarz.com/', type: 'GET', success: function(resp) { html = resp}})
 
 $.ajax({
-	url: 'http://agarz.com/main26obf.js', 
+	url: 'http://agarz.com/main36obf.js', 
 	type: 'GET', 
 	success: function(resp){
 		var aaa = resp.replace(/\[/g, 'barra1');
 		aaa = aaa.replace(/\]/g, 'barra2');
-		$.each(_0x1d3c, function(k, v){
-			var re = new RegExp('_0x1d3cbarra1'+k+'barra2','g');
+		$.each(_0xc349, function(k, v){
+			var re = new RegExp('_0xc349barra1'+k+'barra2','g');
 			if(v == '\n') {
 				aaa = aaa.replace(re, '\'enter\'');
 			} else {

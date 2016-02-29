@@ -4,10 +4,10 @@
 
 *	ejecuta el onload al final
 *	Masa rapido con W
-*	_0x21b4xaf por socket
-*	_0x21b4x3b por sendSocket 
-*	_0x21b4x3a por crearDataView 
-*	_0x21b4x79 por obtenerZoom, valor 0.15,  buscar: 0 != _
+*	_0x5539xc0 por socket
+*	_0x5539x3f por sendSocket 
+*	_0x5539x3e por crearDataView 
+*	_0x5539x8d por obtenerZoom, valor 0.15,  buscar: 0 != _
 *   skin autocomplete on
 *	cambia enter por \n
 
