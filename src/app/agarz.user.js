@@ -25,7 +25,7 @@
 // @id              agarz
 // @name            agarz extras
 // @namespace       http://www.facebook.com/richirm
-// @version         0.0.18
+// @version         0.0.19
 // @author          richirm
 // @description     Agrega funcionalidades para agarz
 // @icon            https://raw.githubusercontent.com/richirm/agarz/master/src/assets/img/t%26p.png
@@ -55,8 +55,10 @@
 			window.setTimeout(function () {
 				var head = window.$('head').html().
 					replace(/main(\d*)([a-zA-Z]*).js/,'https://dl.dropboxusercontent.com/u/65999952/agarz.main.js').
-					replace('main22obf.js','https://dl.dropboxusercontent.com/u/65999952/agarz.main.js'),
-					body = window.$('body').html();
+					replace('main41obf.js','https://dl.dropboxusercontent.com/u/65999952/agarz.main.js'),
+					body = window.$('body').html().
+					replace(/main(\d*)([a-zA-Z]*).js/,'https://dl.dropboxusercontent.com/u/65999952/agarz.main.js').
+					replace('main41obf.js','https://dl.dropboxusercontent.com/u/65999952/agarz.main.js');
 
 				window.$('head >, body >').remove();
 
