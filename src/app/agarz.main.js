@@ -188,7 +188,7 @@ var CONNECTION_URL = '62.210.246.200:' + port;
         var _0x8f41x31 = 0;
         var _0x8f41x32 = false;
         var _0x8f41x33 = false;
-        _0x8f41x3['onkeydown'] = function(_0x8f41x2b) {
+        _0x8f41x3['onkeydown'] = function(_0x8f41x2b) {console.log(_0x8f41x2b['keyCode']);
             var _0x8f41x34 = _0x8f41x4('#overlays')['is'](':visible');
             switch (_0x8f41x2b['keyCode']) {
                 case 32:
